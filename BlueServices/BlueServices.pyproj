@@ -31,7 +31,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="BlueServices\DBEntities\Entity.py" />
+    <Compile Include="BlueServices\Entity.py" />
     <Compile Include="BlueServices\Login\login.py" />
     <Compile Include="BlueServices\Login\models.py" />
     <Compile Include="BlueServices\Login\resource.py" />

@@ -1,19 +1,31 @@
 from mongoengine import *
+from BlueServices import Entity
 connect('user', host='mongodb://cnorman:pernell1@ds031088.mongolab.com:31088/MongoLab-2')
 
 
 
-class login:
+class loginEntity():
     def __init__(self, name, password):
         self.name = name
-        self.password = password
+        self.passw = password
 
-    def validate(name, password):
-        if name ==  null :
-            return 'yo'
+    def checkIfInSystem() :
+        for users in UserEntity :
+            if users.name.userName == self.name :
+                print users
+                this.loggedInUser = users
+                return checkIfCorrectPass(users, self.password)
+            else :
+                return 0
 
-    def checkIfInSystem(name):
-        return null
+    def checkIfCorrectPass(user, password) :
+        if user.password == password :
+            return user
+        else :
+            return 0
+                
+
+        
    
 
 
