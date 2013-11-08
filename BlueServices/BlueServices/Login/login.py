@@ -1,6 +1,6 @@
 from mongoengine import *
 from BlueServices import Entity
-connect('user', host='mongodb://cnorman:pernell1@ds031088.mongolab.com:31088/MongoLab-2')
+connect('user', host='mongodb://user:pass@ds031088.mongolab.com:31088/MongoLab-2')
 
 
 
