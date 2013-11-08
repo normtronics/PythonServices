@@ -31,12 +31,17 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="BlueServices\DBEntities\Entity.py" />
     <Compile Include="BlueServices\Login\login.py" />
     <Compile Include="BlueServices\Login\models.py" />
     <Compile Include="BlueServices\Login\resource.py" />
     <Compile Include="BlueServices\Login\tests.py" />
     <Compile Include="BlueServices\Login\views.py" />
     <Compile Include="BlueServices\Login\__init__.py" />
+    <Compile Include="BlueServices\Register\models.py" />
+    <Compile Include="BlueServices\Register\tests.py" />
+    <Compile Include="BlueServices\Register\views.py" />
+    <Compile Include="BlueServices\Register\__init__.py" />
     <Compile Include="manage.py" />
     <Compile Include="BlueServices\__init__.py" />
     <Compile Include="BlueServices\settings.py" />
@@ -59,6 +64,9 @@
     <Folder Include="BlueServices\" />
     <Folder Include="BlueServices\Login\" />
     <Folder Include="BlueServices\Login\templates\" />
+    <Folder Include="BlueServices\DBEntities\" />
+    <Folder Include="BlueServices\Register\" />
+    <Folder Include="BlueServices\Register\templates\" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">
@@ -74,6 +82,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="BlueServices\Login\templates\index.html" />
+    <Content Include="BlueServices\Register\templates\index.html" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Python Tools\Microsoft.PythonTools.Django.targets" />
   <ProjectExtensions>
